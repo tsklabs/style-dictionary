@@ -39,6 +39,7 @@ var StyleDictionary = {
   format: require('./lib/common/formats'),
   action: require('./lib/common/actions'),
   filter: {}, // we need to initialise the object, since we don't have built-in filters
+  provider: require('./lib/common/sources'),
 
   registerTransform: require('./lib/register/transform'),
   registerTransformGroup: require('./lib/register/transformGroup'),
@@ -46,6 +47,7 @@ var StyleDictionary = {
   registerTemplate: require('./lib/register/template'),
   registerAction: require('./lib/register/action'),
   registerFilter: require('./lib/register/filter'),
+  registerSource: require('./lib/register/source'),
 
   exportPlatform: require('./lib/exportPlatform'),
   buildPlatform: require('./lib/buildPlatform'),
